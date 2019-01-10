@@ -1,0 +1,313 @@
+/* header */
+
+.header {
+	position: fixed;
+	background: rgba(#fff, .3);
+	top:  0;		
+	left: 0;
+	width:  100%;
+	z-index: 5;
+
+	&.js-header {
+		box-shadow: 0 0 15px rgba(0,0,0,0.3);
+		background: #fff;
+		transition: all .3s ease-in-out;
+	}
+
+	&-backdrop {
+		position: fixed;
+		z-index: -1;
+		top: 365px;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		transform: translateY(100%);
+		background-color: transparent;
+		transition: all .39s cubic-bezier(0.22, 0.61, 0.36, 1);
+		pointer-events: none;
+	}
+
+	&.js-mob-menu-is-open {
+
+		.header-backdrop{
+			pointer-events: all;
+			background-color: rgba(#000, .6);
+			transform: translateY(0);
+		}
+
+		.nav-toggle-icon {
+
+			span {
+
+				&:nth-child(2) {
+					opacity: 0
+				}
+
+				&:nth-child(1) {
+	        transform: translateY(9px) rotate(45deg)
+	    	}
+        
+        &:nth-child(3) {
+	        transform: translateY(-9px) rotate(-45deg)
+	    	}
+    	}
+
+		}
+	}
+}
+
+
+.navbar {
+	padding-top: 0;
+	padding-bottom: 10px;
+
+	&-brand {
+		position: absolute;
+		top:  0;		
+		left: 0;
+		padding: 0;
+		margin-top: 3px;
+		
+		img {
+			height: 53px;
+		}
+	}
+
+	&-nav .menu-item {
+
+		.nav-link {
+			font-family: $font-sec;
+			padding: 10px;
+			padding-top: 15px;
+			font-weight: 700;
+			color: #000;
+			font-size: 18px;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: all .2s ease-in-out;
+
+			&:hover,
+			&.active {
+				background-color: #000;
+				color: #fff
+			}
+		}
+
+		&:not(:last-of-type)  {
+			margin-right: 25px;
+		}	
+	}
+
+	&-toggler {
+		width:  40px;
+		height: 40px;
+		padding: 0;
+		border: none;
+
+		.nav-toggle-icon {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			z-index: 4;
+	    width:  100%;
+	    height: 100%;
+
+			span {
+				display: block;
+				width: 70%;
+				height: 2px;
+				background-color: #000;
+				transition: all .39s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+				&:not(:last-of-type) {
+					margin-bottom: 7px;
+				}
+			}
+		}
+
+
+	}
+}
+
+
+
+
+
+
+
+
+
+.dropdown-toggle::after {
+	// transform: translate(2px, 2px);
+}
+
+
+
+
+
+///////////// MEDIA QUERIES /////////////
+
+@media (max-width: 1199px) {
+
+	.navbar {
+		padding-bottom: 14px;
+
+		&-brand {
+			margin-bottom: 2px;
+
+			img {
+				height: 52px;
+			}
+		}
+
+		&-nav .menu-item {
+
+			.nav-link {
+				font-size: 16px;
+			}
+
+			&:not(:last-of-type) {
+				margin-right: 15px;
+			}	
+		}
+
+	}
+
+	
+
+}
+
+
+
+@media (max-width: 991px) {
+
+	.navbar {
+
+		&-brand img {
+			height: 45px;
+		}
+
+		&-nav .menu-item {
+
+			.nav-link {
+				padding: 7px;	
+				padding-top: 15px;
+				font-size: 13px;
+			}
+
+			&:not(:last-of-type) {
+				margin-right: 8px;
+			}	
+		}
+
+	}
+
+}
+
+
+
+
+@media (max-width: 767px) {
+
+	.header {
+		background-color: #fff;
+		box-shadow: 0 0 15px rgba(0,0,0,0.3);
+
+		.container {
+			max-width: 95%;
+		}
+	}
+	
+	.navbar {
+		justify-content: flex-end;
+		padding: .5rem 0;
+
+		&-toggler {
+			outline: none !important;
+
+			// .nav-toggle-icon {
+
+			// 	span {
+			// 		width: 70% !important;
+					
+			// 		&:not(:last-of-type) {
+			// 			margin-bottom: 6px;
+			// 		}
+			// 	}
+			// }
+		}
+
+		&-collapse {
+			padding-top: 20px;
+		}
+
+		.menu-item {
+			text-align: center;
+
+			&:not(:last-of-type) {
+		    margin-right: 0;
+		    margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+
+
+// @media (max-width: 767px) {
+
+// }
+
+
+
+
+
+
+
+
+
+// @media (max-width: 767px) {
+
+// 	.header {
+// 		padding: 0;
+// 		padding-left: 15px;
+// 	}
+
+// 	.navbar-nav {
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		align-items: flex-start;
+// 		justify-content: center;
+// 		flex-direction: row;
+// 		padding: 0;
+
+// 		li:not(.soc) {
+// 			min-width: 100%;
+// 		}
+
+// 		.nav-item {
+			
+// 			.nav-link {
+// 				width: 100%;
+// 				justify-content: center;
+// 			}
+
+// 			&.active .nav-link, 
+// 			&.show .nav-link,
+// 			&.current-menu-parent .nav-link {
+// 				background: $c-txt;
+// 				color: #fff !important;
+// 			}
+// 		}
+// 	}
+
+// 	.navbar-brand {
+
+// 		img {
+// 			width: 55px;
+// 		}
+// 	}
+	
+// }

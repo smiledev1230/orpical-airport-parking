@@ -1,0 +1,84 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-sec;
+	text-transform: capitalize;
+}
+
+p {
+	color: $c-txt;
+	font-size: 20px;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 70px;
+	margin-bottom: 37px;
+}
+
+h2 {
+	font-size: 35px;
+	font-weight: 700;
+	padding-bottom: 15px;
+	margin-bottom: 50px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-bottom: 28px;
+}
+
+h4 {
+	font-size: 26px;
+	margin-bottom: 25px !important;
+}
+
+a:not(.btn) {
+	color: $c-brand;
+}
+
+
+
+///////// MEDIA QUERIES ////////////
+
+
+@media (max-width: 991px) {
+
+	h2 {
+		margin-bottom: 40px;
+	}
+}
+
+
+
+
+@media (max-width: 767px) {
+
+	h2 {
+		margin-bottom: 35px;
+	}
+}
+
+
+
+@media (max-width: 575px) {
+
+	h2 {
+		font-size: 30px;
+		padding-bottom: 10px;
+		margin-bottom: 30px;
+	}
+}
+
+
+
+@media (max-width: 420px) {
+
+	h2 {
+		font-size: 27px;
+		margin-bottom: 25px;
+	}
+}

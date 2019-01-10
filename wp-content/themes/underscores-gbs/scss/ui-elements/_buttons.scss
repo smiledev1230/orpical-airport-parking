@@ -1,0 +1,84 @@
+.btn {
+	padding: 0 15px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-family: $font-sec;
+	line-height: 1;
+	text-transform: capitalize;
+	font-size: 26px;
+	min-width: 200px;
+	border-radius: 7px;
+	transition: all .2s ease-in-out;
+}
+
+.btn--brand {
+	background: $c-brand;
+	color: #fff !important;
+	outline: none;
+	border-radius: 10px;
+	box-shadow: 0 5px #5a1111;
+
+	&:hover {
+		background: $c-brand--d;
+	}
+
+	&:active {
+	  box-shadow: 0 3px darken(#5a1111, 7);
+	  transform: translateY(2px);
+	}
+
+
+}
+
+
+//TODO: find a way to remove this shadow
+.btn.focus, 
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+
+
+.btn--sec {
+	font-size: 32px;
+	line-height: 32px;
+	padding: 11px 0;
+  width: 100%;
+  border: none;
+  background: $c-yellow;
+  color: white;
+
+  &:hover {
+  	background-color: darken($c-yellow, 5);
+  }
+}
+
+
+.btn--like {
+	background-color: #3B5998;
+	padding: 0 5px;
+	min-width: auto;
+	height: 22px;
+	line-height: 22px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 700;
+	color: #fff !important;
+	transition: background-color .2s ease-in-out;
+
+	.no-of-likes {
+		font-weight: 500;
+		margin-left: 7px;
+		margin-bottom: 2px;
+		font-size: 10px;
+	}
+
+	svg {
+		margin-right: 7px;
+	}
+
+	&:hover {
+		background-color: lighten(#3B5998, 9);
+	}
+}

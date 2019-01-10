@@ -1,0 +1,83 @@
+.rating {
+  justify-content: center;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  margin-bottom: 25px;
+  
+  span:after,
+  span:before {
+		position: absolute;
+		left: 0;
+		top: 0;
+  }
+
+  span {
+  	position: relative;
+  	font-size: 35px;
+  	color: $c-yellow;
+  	letter-spacing: 0;
+  }
+
+
+	// -n+x (5~1) for ltr | n+x (6~2) for rtl
+
+	&.rating-1-star {
+	  span:nth-child(n+5) {
+
+			&:before {
+				content: '\2605';
+			}
+		}
+	}
+
+	&.rating-2-star {
+	  span:nth-child(n+4) {
+
+			&:before {
+				content: '\2605';
+			}
+		}
+	}
+
+	&.rating-3-star {
+	  span:nth-child(n+3) {
+
+			&:before {
+				content: '\2605';
+			}
+		}
+	}
+
+	&.rating-4-star {
+	  span:nth-child(n+2) {
+
+			&:before {
+				content: '\2605';
+			}
+		}
+	}
+
+	&.rating-5-star {
+	  span:nth-child(n) {
+
+			&:before {
+				content: '\2605';
+			}
+		}
+	}
+}
+
+
+
+
+
+
+/////////// MEDIA QUERIES ///////////
+
+
+@media (max-width: 767px) {
+	
+	.rating span {
+	  font-size: 30px;
+	}
+}

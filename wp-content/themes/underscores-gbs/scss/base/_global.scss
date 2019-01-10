@@ -1,0 +1,28 @@
+::selection {
+  background-color: $c-gray;
+  color: #fff;
+}
+
+
+.main-content {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+body.admin-bar .main-content {
+  margin-top: 91px;
+}
+
+.container {
+  padding-left:  15px !important;
+  padding-right: 15px !important;
+}
+
+
+
+// define max container width here
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1200px;
+  }
+}

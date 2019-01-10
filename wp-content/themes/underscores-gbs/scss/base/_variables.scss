@@ -1,0 +1,45 @@
+// COLOR VARIABLES ---------------------------
+$c-brand     : #d84a4a; // red
+$c-yellow    : #efb53a;
+$c-gray--d   : #242424;
+$c-gray--l   : #e7e7e7;
+
+$c-brand--d  : darken($c-brand, 2);
+
+$c-txt    : #626262;
+$c-gray   : #efefef;
+
+
+//ADD fonts here --------------------
+$font-sec : 'Merriweather Sans', sans-serif;
+$font-def : 'Lato', sans-serif;
+
+
+
+
+
+// EXTENDS --------------------------
+%clearfix {
+	&:before, 
+	&:after {
+		content: " "; 
+		display: table;
+	}
+	&:after { clear: both; }
+}
+
+
+%flex { display: flex; }
+
+
+%con-abs {
+	content: "";
+	position: absolute;
+}
+
+
+%bgncc {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

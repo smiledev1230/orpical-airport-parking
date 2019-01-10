@@ -1,0 +1,183 @@
+/* helpers */
+.flex { display: flex; }
+
+
+
+// margins 
+.mb0 { margin-bottom: 0; }
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb30 { margin-bottom: 30px; }
+.mb65 { margin-bottom: 65px; }
+
+
+
+
+// link underline decoration helpers
+.tdu { text-decoration: underline; }
+.htdu:hover { text-decoration: underline !important; }
+
+
+
+
+// bg-color helper classes 
+.bg-brand { background-color: $c-brand; }
+
+
+
+// txt-color helper classes 
+.c-brand  { color: $c-brand; } 
+.c-yellow  { color: $c-yellow !important; } 
+
+
+.fw700 { font-weight: 700; }
+
+
+
+
+/////// utility classes ///////
+
+//background white overlay
+.util--bg-overlay {
+	@extend %bgncc;
+	position: relative;
+
+	&:before {
+		@extend %con-abs;
+		top:  0;
+		left: 0;
+		width:  100%;
+		height: 100%;
+		background-color: rgba(#fff, .7);
+		z-index: 1;
+	}
+
+	* {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+
+//background black overlay
+.util--bg-overlay_dark {
+	@extend %bgncc;
+	position: relative;
+
+	&:before {
+		@extend %con-abs;
+		top:  0;
+		left: 0;
+		width:  100%;
+		height: 100%;
+		background-color: rgba(#000, .2);
+		z-index: 1;
+	}
+
+	* {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+
+
+// underline left side
+.util--left-underline {
+	position: relative;
+	display: inline-block;
+
+	&:before {
+		@extend %con-abs;
+		bottom: 0;
+		left:   0;
+		width:  70px;
+		height: 4px;
+		background-color: #000;
+	}
+}
+
+
+
+// underline middle
+.util--mid-underline {
+	position: relative;
+	display: inline-block;
+
+	&:before {
+		@extend %con-abs;
+		bottom: 0;
+		left: 50%;
+		width:  70px;
+		height: 4px;
+		transform: translateX(-50%);
+		background-color: #000;
+	}
+}
+
+
+
+
+
+// Bg image being zoomed on hover
+.util--zoom_wrap {
+	position: relative;
+	display: block;
+	overflow: hidden;
+
+	&:hover {
+			
+		.util--zoom_img {
+			transform: scale(1.05);
+		}
+	}
+}
+
+.util--zoom_img {
+	position: absolute;
+	top:  0;
+	left: 0;
+	width:  100%;
+	height: 100%;
+	@extend %bgncc;
+	transition: transform .3s ease-in-out;
+
+	&:before {
+		@extend %con-abs;
+		top:  0;
+		left: 0;
+		width:  100%;
+		height: 100%;
+	}
+}
+
+
+
+
+.underline-hover {
+	display: inline-block;
+	position: relative;
+	text-decoration: none !important;
+
+	&:before {
+		@extend %con-abs;
+		bottom: -4px;
+		width: 0%;
+		height: .8px;
+		opacity: 0;
+		background-color: currentColor;
+		transition: all .35s ease-in-out;
+	}
+	
+	&:hover, 
+	&.active {
+
+		&:before {
+			opacity: 1;
+			height: .8px;
+			width: 100%;
+		}
+	}
+}

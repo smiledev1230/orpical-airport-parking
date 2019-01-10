@@ -17,3 +17,12 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+wp-admin/
+wp-content/aiowps_backups/
+wp-content/ai1wm-backups/
+wp-content/ewww/
+wp-content/updraft/
+wp-content/themes/*
+wp-content/plugins/*
+wp-includes/
+!wp-content/themes/underscores-gbs/

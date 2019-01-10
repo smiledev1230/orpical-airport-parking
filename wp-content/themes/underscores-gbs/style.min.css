@@ -1,0 +1,485 @@
+/*!
+Theme Name: Airport Theme
+Theme URI: https://www.google.com/
+Author: Orpical
+Author URI: https://google.com
+Description: Custom Airport theme based on underscores and GBS-starter
+*/.util--bg-overlay:before,.util--bg-overlay_dark:before,.util--left-underline:before,.util--mid-underline:before,.util--zoom_img:before,.underline-hover:before,.footer__top a:before,.card--v1 div:before,.tabs--var1:before,.tabs--var1 .tab-content .tab-pane ol li:before,.tabs--var1__tab-toggles .nav-link:before,.sign-up:before,.sign-up:after,.directions:before{content:"";position:absolute}
+.util--bg-overlay,.util--bg-overlay_dark,.util--zoom_img,.hero,.card--v1,.parking-card .parking-img div,.swiper-slide--bcg,.hero--home,.sign-up:after,.sec--img-txt__img div,.hero--inner,.directions:before{background-repeat:no-repeat;background-position:center;background-size:cover}
+body{font:400 28px/1.42857143 "Lato",sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;min-height:100vh}
+.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.mb0{margin-bottom:0}
+.mb10{margin-bottom:10px}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.mb25{margin-bottom:25px}
+.mb30{margin-bottom:30px}
+.mb65{margin-bottom:65px}
+.tdu{text-decoration:underline}
+.htdu:hover{text-decoration:underline !important}
+.bg-brand{background-color:#d84a4a}
+.c-brand{color:#d84a4a}
+.c-yellow{color:#efb53a !important}
+.fw700{font-weight:700}
+.util--bg-overlay{position:relative}
+.util--bg-overlay:before{top:0;left:0;width:100%;height:100%;background-color:rgba(255,255,255,0.7);z-index:1}
+.util--bg-overlay *{position:relative;z-index:2}
+.util--bg-overlay_dark{position:relative}
+.util--bg-overlay_dark:before{top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.2);z-index:1}
+.util--bg-overlay_dark *{position:relative;z-index:2}
+.util--left-underline{position:relative;display:inline-block}
+.util--left-underline:before{bottom:0;left:0;width:70px;height:4px;background-color:#000}
+.util--mid-underline{position:relative;display:inline-block}
+.util--mid-underline:before{bottom:0;left:50%;width:70px;height:4px;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);background-color:#000}
+.util--zoom_wrap{position:relative;display:block;overflow:hidden}
+.util--zoom_wrap:hover .util--zoom_img{-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05)}
+.util--zoom_img{position:absolute;top:0;left:0;width:100%;height:100%;-webkit-transition:-webkit-transform .3s ease-in-out;transition:-webkit-transform .3s ease-in-out;transition:transform .3s ease-in-out;transition:transform .3s ease-in-out,-webkit-transform .3s ease-in-out}
+.util--zoom_img:before{top:0;left:0;width:100%;height:100%}
+.underline-hover,.footer__top a{display:inline-block;position:relative;text-decoration:none !important}
+.underline-hover:before,.footer__top a:before{bottom:-4px;width:0;height:.8px;opacity:0;background-color:currentColor;-webkit-transition:all .35s ease-in-out;transition:all .35s ease-in-out}
+.underline-hover:hover:before,.footer__top a:hover:before,.underline-hover.active:before,.footer__top a.active:before{opacity:1;height:.8px;width:100%}
+h1,h2,h3,h4,h5,h6{font-family:"Merriweather Sans",sans-serif;text-transform:capitalize}
+p{color:#626262;font-size:20px}
+h1{font-weight:700;font-size:70px;margin-bottom:37px}
+h2{font-size:35px;font-weight:700;padding-bottom:15px;margin-bottom:50px}
+h3{font-size:30px;margin-bottom:28px}
+h4{font-size:26px;margin-bottom:25px !important}
+a:not(.btn){color:#d84a4a}
+::-moz-selection{background-color:#efefef;color:#fff}
+::selection{background-color:#efefef;color:#fff}
+.main-content{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;overflow:hidden}
+body.admin-bar .main-content{margin-top:91px}
+.container{padding-left:15px !important;padding-right:15px !important}
+.header{position:fixed;background:rgba(255,255,255,0.3);top:0;left:0;width:100%;z-index:5}
+.header.js-header{box-shadow:0 0 15px rgba(0,0,0,0.3);background:#fff;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+.header-backdrop{position:fixed;z-index:-1;top:365px;left:0;width:100%;height:100vh;-webkit-transform:translateY(100%);-ms-transform:translateY(100%);transform:translateY(100%);background-color:transparent;-webkit-transition:all .39s cubic-bezier(0.22,0.61,0.36,1);transition:all .39s cubic-bezier(0.22,0.61,0.36,1);pointer-events:none}
+.header.js-mob-menu-is-open .header-backdrop{pointer-events:all;background-color:rgba(0,0,0,0.6);-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+.header.js-mob-menu-is-open .nav-toggle-icon span:nth-child(2){opacity:0}
+.header.js-mob-menu-is-open .nav-toggle-icon span:nth-child(1){-webkit-transform:translateY(9px) rotate(45deg);-ms-transform:translateY(9px) rotate(45deg);transform:translateY(9px) rotate(45deg)}
+.header.js-mob-menu-is-open .nav-toggle-icon span:nth-child(3){-webkit-transform:translateY(-9px) rotate(-45deg);-ms-transform:translateY(-9px) rotate(-45deg);transform:translateY(-9px) rotate(-45deg)}
+.navbar{padding-top:0;padding-bottom:10px}
+.navbar-brand{position:absolute;top:0;left:0;padding:0;margin-top:3px}
+.navbar-brand img{height:53px}
+.navbar-nav .menu-item .nav-link{font-family:"Merriweather Sans",sans-serif;padding:10px;padding-top:15px;font-weight:700;color:#000;font-size:18px;text-decoration:none;text-transform:uppercase;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.navbar-nav .menu-item .nav-link:hover,.navbar-nav .menu-item .nav-link.active{background-color:#000;color:#fff}
+.navbar-nav .menu-item:not(:last-of-type){margin-right:25px}
+.navbar-toggler{width:40px;height:40px;padding:0;border:0}
+.navbar-toggler .nav-toggle-icon{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;position:relative;z-index:4;width:100%;height:100%}
+.navbar-toggler .nav-toggle-icon span{display:block;width:70%;height:2px;background-color:#000;-webkit-transition:all .39s cubic-bezier(0.22,0.61,0.36,1);transition:all .39s cubic-bezier(0.22,0.61,0.36,1)}
+.navbar-toggler .nav-toggle-icon span:not(:last-of-type){margin-bottom:7px}
+.footer{background:#242424;font-size:20px;color:#626262;border-top:10px solid #efb53a}
+.footer ul{padding-left:0;list-style:none}
+.footer a{color:#fff}
+.footer__top{padding-top:65px}
+.footer__top h2{text-align:center;font-size:27px;line-height:1.1;padding-bottom:0;margin-bottom:18px}
+.footer__top a{font-size:19px}
+.footer__top ul{padding-top:70px}
+.footer__top li:not(:last-of-type){margin-bottom:17px}
+.footer__top .form-control{height:46px}
+.footer__top .form-group{margin-bottom:10px}
+.footer__btm{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding-bottom:20px}
+.footer__btm ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.footer__btm li:not(:last-of-type){margin-right:20px}
+.footer__btm a{font-size:16px}
+.footer-logo{display:inline-block;margin:54px auto 16px auto}
+.footer-logo img{height:55px}
+.newsletter-footer{max-width:370px;margin-left:auto;margin-right:auto}
+.newsletter-footer .btn{font-size:25px;padding:7px 0}
+.btn{padding:0 15px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;font-family:"Merriweather Sans",sans-serif;line-height:1;text-transform:capitalize;font-size:26px;min-width:200px;border-radius:7px;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.btn--brand{background:#d84a4a;color:#fff !important;outline:0;border-radius:10px;box-shadow:0 5px #5a1111}
+.btn--brand:hover{background:#d64242}
+.btn--brand:active{box-shadow:0 3px #3c0b0b;-webkit-transform:translateY(2px);-ms-transform:translateY(2px);transform:translateY(2px)}
+.btn.focus,.btn:focus{box-shadow:0 0 0 .2rem rgba(0,123,255,0.25)}
+.btn--sec{font-size:32px;line-height:32px;padding:11px 0;width:100%;border:0;background:#efb53a;color:white}
+.btn--sec:hover{background-color:#edac22}
+.btn--like{background-color:#3b5998;padding:0 5px;min-width:auto;height:22px;line-height:22px;border-radius:3px;font-size:11px;font-weight:700;color:#fff !important;-webkit-transition:background-color .2s ease-in-out;transition:background-color .2s ease-in-out}
+.btn--like .no-of-likes{font-weight:500;margin-left:7px;margin-bottom:2px;font-size:10px}
+.btn--like svg{margin-right:7px}
+.btn--like:hover{background-color:#496db8}
+.form-control{height:42px;text-align:center;border:2px solid #e7e7e7;border-radius:6px;font-family:"Lato",sans-serif;font-size:20px}
+.form-control::-webkit-input-placeholder{text-align:left;color:#999}
+.form-control::-moz-placeholder{text-align:left;color:#999}
+.form-control:-ms-input-placeholder{text-align:left;color:#999}
+.form-control::placeholder{text-align:left;color:#999}
+.form-control:focus{border-color:rgba(239,181,58,0.5);box-shadow:0 0 0 .2rem rgba(239,181,58,0.25)}
+.form-group{width:370px;margin-bottom:14px}
+.inner-page-form{width:300px;height:300px;padding:15px;margin:0 auto;background-color:#000;border-radius:10px}
+.inner-page-form h4{font-family:"Lato",sans-serif;font-size:18px;color:#fff;margin:3px 0 18px 0 !important}
+.inner-page-form #startDate,.inner-page-form #endDate{border-radius:0}
+.inner-page-form .form-group{width:100%}
+.inner-page-form .form-group .form-control{font-size:14px;padding-bottom:8px;font-weight:700}
+.inner-page-form .form-group:nth-of-type(1),.inner-page-form .form-group:nth-of-type(3){margin-right:3px}
+.inner-page-form .promo-code .form-control{border-radius:0}
+.inner-page-form .btn{font-family:"Lato",sans-serif;font-weight:700;font-size:24px;width:100%;padding:17px 0;text-transform:uppercase;box-shadow:none}
+.front-page-form{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;background-color:rgba(0,0,0,0.7);padding:10px;margin-bottom:12px;border-radius:10px}
+.front-page-form .form-group{width:180px;margin-bottom:0}
+.front-page-form .form-group .form-control{font-size:14px;padding-bottom:8px;font-weight:700}
+.front-page-form .promo-code .form-control{border-radius:0}
+.front-page-form .start-end-time .form-group{width:145px}
+.front-page-form .start-end-time .form-group:nth-of-type(1){margin-right:3px}
+.front-page-form .start-end-time .form-group:nth-of-type(1) .form-control{border-radius:0}
+.front-page-form--v2{background-color:#000;padding:20px}
+.front-page-form--v2 .form-control{border-radius:0}
+.front-page-form--v2 .btn{width:120px;height:42px;border-radius:0}
+.front-page-form--v2 .promo-code{width:110px}
+.card--v1{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;border-radius:10px;padding:100px 0}
+.card--v1 div:before{top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.3)}
+.card--v1 h3{text-transform:uppercase;font-weight:700;font-size:54px;color:#fff;margin-bottom:0;z-index:2}
+.card--v1 p{position:absolute;bottom:10px;left:5%;width:90%;line-height:1.3;font-size:18px;color:#fff;margin-bottom:0;text-transform:capitalize;text-align:center}
+.card--v1:hover{text-decoration:none}
+.services-card{cursor:pointer;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.services-card:hover,.services-card.js-is-active{background:#626262;color:#fff}
+.services-cards{overflow:hidden;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;border-radius:10px;border:1px solid #626262}
+.services-cards h5{font-family:"Lato",sans-serif;font-size:17px;text-align:center;text-transform:initial;margin:10px 0;min-height:40px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.services-cards .services-card{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding:0 15px;width:calc(100% / 3);max-height:50%}
+.services-cards .services-card:not(:nth-child(3)):not(:nth-child(6)){border-right:1px solid #626262}
+.services-cards .services-card:nth-child(-n+3){border-bottom:1px solid #626262}
+.services-cards .services-card:hover{cursor:pointer}
+.services-cards .services-card .img-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end;height:100px;margin:0}
+.services-cards .services-card .img-wrap svg{width:75px;fill:#efb53a}
+.services-content{top:0;left:0;width:100%;height:auto;position:absolute;opacity:0;height:0;overflow-y:hidden;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.services-content.js-is-active{opacity:1;height:auto;overflow-y:visible}
+.parking-card{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;background-color:#fff;border-radius:3px;height:160px;margin-bottom:25px;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;box-shadow:0 0 3px 1px rgba(0,0,0,0.03)}
+.parking-card:hover{box-shadow:0 0 14px 1px rgba(0,0,0,0.12);text-decoration:none}
+.parking-card:hover .parking-img .util--zoom_img{-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05)}
+.parking-card .parking-info,.parking-card .parking-price{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding:0 25px}
+.parking-card .parking-img{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;min-width:240px;padding:0}
+.parking-card .parking-img div{height:100%;width:240px;min-width:240px}
+.parking-card .parking-img .more-info{font-size:16px;color:#000;text-transform:capitalize}
+.parking-card .parking-info{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1}
+.parking-card .parking-info--name{font-size:20px;font-weight:700;margin-bottom:20px;padding-bottom:0}
+.parking-card .parking-info--airport,.parking-card .parking-info--street,.parking-card .parking-info--neighborhood{text-transform:capitalize;margin-bottom:0;font-size:18px}
+.parking-card .parking-price{-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;max-width:420px}
+.parking-card .parking-price h2{font-size:45px;font-weight:700;color:#626262;letter-spacing:0;margin-bottom:0;padding-bottom:0}
+.swiper-container{width:100%;height:100%;border-radius:0 !important}
+.swiper-slide{border-radius:0 !important}
+.swiper-slide--bcg{width:100%;height:100%;border-radius:0 !important}
+.swiper-container-horizontal>.swiper-pagination-bullets{height:50px}
+.swiper-pagination{margin:0 5px}
+.swiper-pagination-bullet{width:13px;height:13px;background:rgba(0,0,0,0.2);opacity:1;border:2px solid rgba(255,255,255,0.6)}
+.swiper-pagination-bullet-active{background:#fff}
+.slider-hero .swiper-slide{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;opacity:0 !important;-webkit-transition:opacity 1s ease-in-out !important;transition:opacity 1s ease-in-out !important}
+.slider-hero .swiper-slide-active{opacity:1 !important}
+.slider-hero .swiper-slide:hover{text-decoration:none}
+.video-wrapper{position:relative;padding-bottom:56.25%;padding-top:25px;height:0}
+.video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+.rating{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;unicode-bidi:bidi-override;direction:rtl;margin-bottom:25px}
+.rating span:after,.rating span:before{position:absolute;left:0;top:0}
+.rating span{position:relative;font-size:35px;color:#efb53a;letter-spacing:0}
+.rating.rating-1-star span:nth-child(n+5):before{content:'\2605'}
+.rating.rating-2-star span:nth-child(n+4):before{content:'\2605'}
+.rating.rating-3-star span:nth-child(n+3):before{content:'\2605'}
+.rating.rating-4-star span:nth-child(n+2):before{content:'\2605'}
+.rating.rating-5-star span:nth-child(n):before{content:'\2605'}
+.tabs--var1{position:relative}
+.tabs--var1:before{top:59px;left:50%;width:100vw;height:10px;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);background-color:#efb53a}
+.tabs--var1 .tab-content{position:relative}
+.tabs--var1 .tab-content .tab-pane{padding-top:60px;min-height:600px}
+.tabs--var1 .tab-content .tab-pane ol{counter-reset:list;margin-bottom:0;padding:0 15px;padding-bottom:250px}
+.tabs--var1 .tab-content .tab-pane ol li{list-style:none;font-size:20px}
+.tabs--var1 .tab-content .tab-pane ol li:before{left:10px;content:counter(list) ") ";counter-increment:list}
+.tabs--var1 .tab-content .tab-pane ol li:not(:last-of-type){margin-bottom:25px}
+.tabs--var1 .tab-content .map{position:absolute;top:0;right:0;width:50vw;height:100%}
+.tabs--var1 .tab-content .map #map-canvas{position:absolute;top:0;left:0;width:100%;height:100%}
+.tabs--var1__tab-toggles{overflow-y:hidden}
+.tabs--var1__tab-toggles .nav-tabs,.tabs--var1__tab-toggles .nav-link{border:0}
+.tabs--var1__tab-toggles .nav-link{position:relative;display:inline-block;padding:25px;padding-top:15px;font-size:25px;line-height:normal;letter-spacing:.2px;color:#d4d4d4;border:transparent;border-radius:0;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+.tabs--var1__tab-toggles .nav-link:hover,.tabs--var1__tab-toggles .nav-link.active{color:#fff;background-color:transparent}
+.tabs--var1__tab-toggles .nav-link:hover:before,.tabs--var1__tab-toggles .nav-link.active:before{-webkit-transform:translateY(0) scaleY(1);-ms-transform:translateY(0) scaleY(1);transform:translateY(0) scaleY(1)}
+.tabs--var1__tab-toggles .nav-link:not(:last-of-type){margin-right:10px}
+.tabs--var1__tab-toggles .nav-link:before{top:0;left:0;width:100%;height:100%;z-index:-1;-webkit-transition:-webkit-transform .5s cubic-bezier(0.175,0.885,0.32,1.275);transition:-webkit-transform .5s cubic-bezier(0.175,0.885,0.32,1.275);transition:transform .5s cubic-bezier(0.175,0.885,0.32,1.275);transition:transform .5s cubic-bezier(0.175,0.885,0.32,1.275),-webkit-transform .5s cubic-bezier(0.175,0.885,0.32,1.275);background-color:#efb53a;-webkit-transform:translateY(100%) scaleY(0);-ms-transform:translateY(100%) scaleY(0);transform:translateY(100%) scaleY(0)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background-color:#fff;padding:20px;border-radius:8px}
+::-webkit-scrollbar-thumb{-webkit-box-shadow:none;background-color:#d84a4a;border-radius:8px}
+.hero--home__wrap{padding:100px 80px 30px 80px;text-align:center}
+.hero--home h1{text-transform:uppercase}
+.hero--home .btn{margin-bottom:55px;padding:15px 0 10px 0;width:100%;font-size:47px;line-height:38px;font-weight:700;text-transform:uppercase}
+.hero--home .parking-option{padding:10px;border-radius:10px;border:7px solid #d84a4a;background:-webkit-repeating-linear-gradient(135deg,#d84a4a,rgba(216,74,74,0.3) 2px,rgba(216,74,74,0.3) 12px);background:repeating-linear-gradient(-45deg,#d84a4a,rgba(216,74,74,0.3) 2px,rgba(216,74,74,0.3) 12px);color:#fff;width:calc(50% - 100px)}
+.hero--home .parking-option p{margin-bottom:0;color:#fff}
+.hero--home .parking-option--name p{font-weight:900;font-size:34px;line-height:40px;padding-top:5px}
+.hero--home .parking-option--price{margin-left:18px}
+.hero--home .parking-option--price .price{margin-left:20px;position:relative;font-family:"Merriweather Sans",sans-serif;font-weight:700;font-size:65px;line-height:75px;color:#fff}
+.hero--home .parking-option--price .price span{position:absolute;font-size:45px;top:-15px;left:-28px}
+.hero--home .bcg--filler{margin-bottom:-10px}
+.airports .container{position:relative}
+.airports .toggle--load-more{margin-left:auto;display:table;font-size:14px;margin-top:10px;color:#86b2ee}
+.services{margin-bottom:50px}
+.reviews--home{background-color:#efefef;padding-top:0 !important}
+.reviews--home .bcg--filler{margin-bottom:20px;-webkit-transform:rotate(180deg) translateY(7px) !important;-ms-transform:rotate(180deg) translateY(7px) !important;transform:rotate(180deg) translateY(7px) !important}
+.sign-up{position:relative;padding:50px 0}
+.sign-up h2{margin-left:auto;margin-bottom:0;font-size:42px;text-align:right;padding:0;padding-right:20px;padding-top:5px}
+.sign-up:before{top:0;left:-100px;width:43%;height:100%;background-color:#efb53a;-webkit-transform:skewX(-33deg);-ms-transform:skewX(-33deg);transform:skewX(-33deg)}
+.sign-up:after{height:100%;width:500px;top:0;left:0;background-image:url(img/sign-up-bg.png)}
+.park-plus-parking{background-color:#efefef;text-align:center;padding:47px 0 75px 0}
+.park-plus-parking h2{color:#626262;padding-bottom:0;margin-bottom:40px}
+.park-plus-parking h2 span{color:#efb53a}
+.park-plus-parking ul{text-align:left;list-style:none;padding:0;padding-bottom:25px;margin-bottom:20px;border-bottom:1px solid #aaa}
+.park-plus-parking ul li{line-height:22px;margin-bottom:10px}
+.park-plus-parking ul .underline-hover:before,.park-plus-parking ul .footer__top a:before,.footer__top .park-plus-parking ul a:before{top:28px}
+.park-plus-parking ul li a{text-transform:capitalize;font-size:22px;color:#626262}
+.park-plus-parking .social-wrap ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;border:0;padding-bottom:0;margin-bottom:0}
+.park-plus-parking .social-wrap ul a{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;width:45px;height:45px;background-color:#9e9e9e;border-radius:50%;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+.park-plus-parking .social-wrap ul a:hover{background-color:#efb53a}
+.park-plus-parking .social-wrap ul li:not(:last-of-type){margin-right:20px}
+.park-plus-parking .social-wrap ul svg{height:25px;fill:white}
+.park-plus-parking .col-lg-3{margin:0 calc(100% / 12)}
+.park-plus-parking .location{position:relative;width:100%;height:360px}
+.park-plus-parking .location #map-canvas{position:absolute;top:0;left:0;width:100%;height:100%}
+.starting-at{font-size:22px !important;line-height:1;display:block;width:100%;text-align:right;color:#fff}
+.sec--img-txt{padding:65px 0}
+.sec--img-txt h4{font-size:30px;font-weight:700;color:#626262;margin-bottom:10px !important}
+.sec--img-txt__txt{padding-left:60px;position:relative;height:100%;overflow-y:auto}
+.sec--img-txt__img div{border-radius:10px;max-width:100%;height:315px;margin:0 auto}
+.sec--img-txt.reverse .row{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
+.sec--img-txt.reverse .sec--img-txt__txt{padding-right:calc((100% / 6) - 15px);padding-left:0}
+.sec--3-card{padding:65px 0}
+.sec--reviews{padding:75px 0;text-align:center;background-color:#efefef}
+.sec--reviews__review{padding-right:35px;padding-left:35px}
+.sec--reviews .row{margin-bottom:60px}
+.sec--reviews h2{margin-bottom:80px}
+.sec--reviews h5{font-size:19px;margin-bottom:0}
+.sec--reviews p{padding-top:15px;font-size:17px;color:#000;margin-bottom:5px}
+.sec--reviews p:first-of-type{border-top:1px solid #bdbdbd}
+.sec--reviews .bcg--filler{margin-bottom:10px;-webkit-transform:rotate(180deg) translateY(7px);-ms-transform:rotate(180deg) translateY(7px);transform:rotate(180deg) translateY(7px)}
+.sec--reviews .btn{padding:25px 0;font-size:18px}
+.sec--reviews__btns{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.sec--reviews__btns span{font-size:35px;font-weight:700;text-transform:uppercase;margin:0 60px}
+.sec--tabs-var1{padding:65px 0;padding-bottom:0}
+.hero--inner{padding:120px 0;text-align:center}
+.hero--inner .row{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.hero--inner h1{font-size:52px;font-weight:800;margin-bottom:80px}
+.hero--inner ul{text-align:left;list-style-image:url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQyIDQyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MiA0MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8cG9seWdvbiBwb2ludHM9IjQyLDE5IDIzLDE5IDIzLDAgMTksMCAxOSwxOSAwLDE5IDAsMjMgMTksMjMgMTksNDIgMjMsNDIgMjMsMjMgNDIsMjMgIiBmaWxsPSIjMDAwMDAwIi8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=)}
+.hero--inner ul li{font-weight:800;font-size:25px}
+.hero--inner .starting-from{position:relative;display:table;margin-left:60px}
+.hero--inner .starting-from span,.hero--inner .starting-from p{color:#000}
+.hero--inner .starting-from span{position:absolute;top:-18px;left:30px;font-weight:700;font-size:19px;font-style:italic}
+.hero--inner .starting-from p{font-weight:700;font-size:99px;line-height:1;letter-spacing:-8px;padding-left:20px;font-family:"Merriweather Sans",sans-serif}
+.hero--inner .starting-from p span{position:absolute;top:-5px;left:-15px;font-size:60px;font-style:initial}
+.hero--inner .contact-info p,.hero--inner .contact-info a{font-weight:800;color:#000}
+.hero--inner .contact-info p{font-size:23px;margin-bottom:0;margin-left:8px}
+.hero--inner .contact-info a{font-size:36px}
+.hero--inner .contact-info svg{width:68px;-webkit-align-self:center;-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}
+.hero--inner .slide-to-section{position:absolute;bottom:0;left:0;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background-color:#efb53a}
+.hero--inner .slide-to-section ul{list-style:none;padding-left:0;margin-bottom:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.hero--inner .slide-to-section li{margin:0 20px}
+.hero--inner .slide-to-section a{font-family:"Merriweather Sans",sans-serif;position:relative;display:inline-block;padding:15px 10px;font-weight:700;font-size:25px;color:#000;line-height:normal;text-transform:capitalize;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+.hero--inner .slide-to-section a:hover,.hero--inner .slide-to-section a.active{color:#efb53a;background-color:#000;text-decoration:none}
+.hero--inner .slide-to-section.fixed{position:fixed;top:60px;left:0;width:100%;height:61.82px;z-index:4}
+.directions{position:relative}
+.directions:before{bottom:-1px;left:0;width:100%;height:80px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 60'%3E%3Cpath fill='%23EFEFEF' d='M0,60C0,60,207.4,0,800,0c592.6,0,800,60,800,60H0z'/%3E%3C/svg%3E");z-index:3}
+.directions svg{margin-bottom:-10px}
+.airport-reviews{padding-top:50px;padding-bottom:120px}
+.hero--airports{padding:260px 0 200px}
+.airports-near{text-align:center;padding:80px 0}
+.airports-near .col-lg-3{line-height:1;margin-bottom:20px}
+.airports-near h2{padding-bottom:0;margin-bottom:30px;padding-bottom:12px}
+.airports-near svg{display:block;margin:0 auto}
+.airports-near a{color:#efb53a;font-size:18px;font-weight:700;line-height:10px;margin-bottom:30px}
+.airports-near .col-lg-3{padding:0 30px}
+.parking-locations h2{padding-bottom:0;margin-bottom:30px}
+.parking-locations .parking-location{padding-bottom:20px;margin-bottom:20px}
+.parking-locations .parking-location--state{font-size:21px;padding-bottom:20px;margin-bottom:10px;font-weight:900;border-bottom:1px solid #dedede}
+.parking-locations .parking-location--name{font-size:21px;font-weight:900;color:#efb53a;text-transform:capitalize;margin-bottom:5px !important;padding-bottom:0;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.parking-locations .parking-location--name:hover{color:#cc9011;text-decoration:none}
+.parking-locations .parking-location--street,.parking-locations .parking-location--neighborhood,.parking-locations .parking-location--phone{font-size:21px;text-transform:capitalize;color:#000;margin-bottom:0}
+.parking-locations .parking-location:not(:last-of-type){border-bottom:1px solid #dedede}
+.airports-map{position:relative;width:100%;height:400px}
+.airports-map #airports-map-canvas{position:absolute;top:0;left:0;width:100%;height:100%}
+.airport-parkings{padding:80px 0;background-color:rgba(212,195,195,0.1)}
+.airport-parkings .airport-name{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin-bottom:30px;font-weight:900;padding-bottom:0}
+.airport-parkings .airport-name h1{font-size:43px;margin-bottom:0;padding-bottom:10px}
+.reviews--parking{background-color:#efefef;padding-top:0 !important}
+.reviews--parking .bcg--filler{margin-bottom:20px;-webkit-transform:rotate(180deg) translateY(7px) !important;-ms-transform:rotate(180deg) translateY(7px) !important;transform:rotate(180deg) translateY(7px) !important}
+@media(min-width:1200px){.container{max-width:1200px}
+}@media(max-width:1787px){.card--v1{padding:80px 0}
+}@media(max-width:1199px){.navbar{padding-bottom:14px}
+.navbar-brand{margin-bottom:2px}
+.navbar-brand img{height:52px}
+.navbar-nav .menu-item .nav-link{font-size:16px}
+.navbar-nav .menu-item:not(:last-of-type){margin-right:15px}
+.footer__top{padding-top:50px}
+.footer__top h2{font-size:26px;line-height:1.1}
+.footer__top a{font-size:17px}
+.footer__top li:not(:last-of-type){margin-bottom:17px}
+.footer__top .form-control{height:46px}
+.footer__top .form-group{width:100%;margin-bottom:10px}
+.front-page-form .start-end-time .form-group{width:110px}
+.card--v1 p{font-size:16px}
+.services-cards h5{font-size:16px;margin:7px 0}
+.services-cards .services-card .img-wrap{height:80px}
+.services-cards .services-card .img-wrap svg{width:65px}
+.hero--home .parking-option{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:calc(50% - 20px);padding:10px 0}
+.sign-up h2{font-size:38px;padding-right:15px}
+.sign-up:before{width:38%}
+.sign-up:after{height:100%;width:290px;background-position:-220px}
+.hero--inner h1{font-size:46px;margin-bottom:60px}
+.hero--inner .starting-from{margin-left:30px}
+.hero--inner .starting-from span{top:-15px;left:30px;font-size:19px}
+.hero--inner .starting-from p{font-size:90px;line-height:1}
+.hero--inner .starting-from p span{top:-5px;left:-10px;font-size:50px}
+.hero--inner .contact-info p{font-size:22px}
+.hero--inner .contact-info a{font-size:30px}
+.hero--inner ul li{font-size:22px}
+}@media(max-width:991px){h2{margin-bottom:40px}
+.navbar-brand img{height:45px}
+.navbar-nav .menu-item .nav-link{padding:7px;padding-top:15px;font-size:13px}
+.navbar-nav .menu-item:not(:last-of-type){margin-right:8px}
+.footer__top ul{padding-top:50px;text-align:center}
+.footer-logo{margin:40px auto 16px auto !important}
+.front-page-form{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.front-page-form>.form-group,.front-page-form .start-end-time,.front-page-form .start-end-time .form-group{width:100%}
+.front-page-form>.form-group:nth-child(1),.front-page-form .start-end-time .form-group{margin-bottom:10px}
+.front-page-form--v2 .btn{width:100%;margin-top:10px}
+.card--v1 p{font-size:16px}
+.card--v1 h3{font-size:40px}
+.services-cards h5{margin:5px 0}
+.services-cards .services-card .img-wrap{height:75px}
+.services-cards .services-card .img-wrap svg{width:60px}
+.tabs--var1 .tab-content .tab-pane li{font-size:18px !important}
+.tabs--var1 .tab-content .tab-pane li:not(:last-of-type){margin-bottom:20px !important}
+.hero--home__wrap{padding:100px 40px 30px 40px}
+.hero--home .parking-options{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.hero--home .parking-options .parking-option{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:100%}
+.hero--home .parking-options .parking-option:not(:last-of-type){margin-bottom:30px}
+.hero--home .parking-options .parking-option--price{font-size:60px}
+.hero--home .parking-options .parking-option--price span{font-size:40px}
+.hero--home .parking-options .parking-option--name p{font-size:30px}
+.sign-up h2{font-size:36px;padding-top:0}
+.sign-up:before,.sign-up:after{display:none}
+.park-plus-parking{padding:45px 0 60px 0}
+.park-plus-parking h2{margin-bottom:30px}
+.park-plus-parking ul li a{font-size:18px}
+.park-plus-parking .col-lg-3{margin-left:0}
+.park-plus-parking .location{margin-left:40px}
+.park-plus-parking .underline-hover:before,.park-plus-parking .footer__top a:before,.footer__top .park-plus-parking a:before{top:15px}
+.sec--img-txt,.sec--3-card,.sec--reviews,.sec--tabs-var1{padding:50px 0}
+.sec--img-txt__txt{padding-left:30px}
+.sec--img-txt p{font-size:19px}
+.sec--reviews__review{padding-right:20px;padding-left:20px}
+.sec--reviews h2{margin-bottom:50px}
+.sec--reviews h5{font-size:19px;margin-bottom:0}
+.sec--reviews .btn{padding:20px 0;font-size:18px}
+.hero--inner .contact-info .d-flex{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:30px}
+.hero--inner .contact-info p{text-align:left;margin:0}
+.hero--inner .contact-info svg{width:50px;margin-right:55px}
+.hero--inner .slide-to-section.fixed{top:54px}
+.starting-from{margin-left:45px !important}
+}@media(max-width:767px){h2{margin-bottom:35px}
+.header{background-color:#fff;box-shadow:0 0 15px rgba(0,0,0,0.3)}
+.header .container{max-width:95%}
+.navbar{-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;padding:.5rem 0}
+.navbar-toggler{outline:none !important}
+.navbar-collapse{padding-top:20px}
+.navbar .menu-item{text-align:center}
+.navbar .menu-item:not(:last-of-type){margin-right:0;margin-bottom:10px}
+.card--v1{padding:110px 0}
+.parking-card .parking-price{padding-left:0}
+.parking-card .parking-price h2{font-size:35px}
+.parking-card .parking-info--name{font-size:18px;margin-bottom:16px}
+.parking-card .parking-info--street{font-size:16px}
+.rating span{font-size:30px}
+.tabs--var1 .tab-pane{padding-top:40px !important;min-height:auto !important}
+.tabs--var1 .tab-content .tab-pane ol{padding:0 35px;padding-bottom:60px}
+.tabs--var1 .tab-content .map{position:relative;height:500px;width:100%}
+.tabs--var1__tab-toggles .nav-link{padding:10px;padding-top:10px;font-size:27px}
+.tabs--var1__tab-toggles .nav-link:not(:last-of-type){margin-right:15px}
+.tabs--var1:before{top:47px}
+.hero--home__wrap{padding:0;padding-top:100px}
+.hero--home h1{font-size:50px;margin-bottom:30px}
+.sign-up{padding:40px 0}
+.sign-up .d-flex{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.sign-up h2{margin-right:auto;text-align:center;margin-bottom:20px;padding:0;font-size:34px}
+.sign-up .btn{font-size:29px;width:370px}
+.sign-up .form-group{margin:0 auto;margin-bottom:15px}
+.airport-reviews{padding-top:0 !important}
+.park-plus-parking{padding:45px 0 60px 0}
+.park-plus-parking h2{margin-bottom:30px}
+.park-plus-parking ul li a{font-size:18px}
+.park-plus-parking .col-lg-3 ul{text-align:center}
+.park-plus-parking .location{margin-left:0}
+.park-plus-parking .social-wrap ul{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-bottom:25px}
+.sec--img-txt,.sec--3-card,.sec--reviews,.sec--tabs-var1{padding:40px 0}
+.sec--img-txt__txt{padding-left:0;padding:0 20px;margin-top:15px;text-align:center;height:260px;margin-top:15px}
+.sec--img-txt__img div{margin-bottom:20px}
+.sec--img-txt.reverse .sec--img-txt__txt{padding-right:0;padding:0 20px}
+.sec--reviews h2{margin-bottom:35px}
+.sec--reviews__btns span{font-size:30px;margin:0 10px}
+.sec--reviews .rating{margin-bottom:0}
+.sec--reviews__review{margin-bottom:30px;padding-right:40px;padding-left:40px}
+.sec--reviews .row{margin-bottom:20px}
+.sec--3-card .row .col-md-4:not(:last-of-type){margin-bottom:20px}
+.hero--inner h1{font-size:40px;margin-bottom:50px}
+.hero--inner .slide-to-section a{padding:10px;font-size:22px}
+.hero--inner .slide-to-section ul li{margin:0 10px}
+.hero--inner .starting-from{margin:0 auto !important}
+.hero--inner .col-lg-5 ul{text-align:center;padding:0;margin-top:20px;list-style:none}
+.hero--inner .col-lg-3 .d-flex{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:20px}
+.hero--inner .col-lg-3 p{text-align:center}
+.hero--inner .col-lg-3 svg{margin:0;margin-bottom:15px}
+.airport-parkings{padding:60px 0}
+.airport-parkings .airport-name h1{font-size:33px}
+}@media(max-width:670px){.parking-card{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;text-align:center;height:auto;padding:20px;max-width:330px;margin-left:auto;margin-right:auto}
+.parking-card .parking-info,.parking-card .parking-price{padding:0 10px}
+.parking-card .parking-img{height:180px;margin-bottom:20px}
+.parking-card .parking-info--name{margin-bottom:5px}
+.parking-card .parking-info--street{margin-bottom:10px}
+.airport-parkings .airport-name h1{margin:0 auto}
+.airport-parkings .airport-name h1:before{left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
+}@media(max-width:580px){.airport-parkings{padding:50px 0}
+.airport-parkings .airport-name h1{font-size:28px}
+}@media(max-width:575px){h2{font-size:30px;padding-bottom:10px;margin-bottom:30px}
+.tabs--var1 .tab-content .tab-pane ol li:before{left:25px !important}
+.services{margin-bottom:20px}
+.sec--img-txt,.sec--3-card,.sec--reviews,.sec--tabs-var1{padding:25px 0}
+.sec--reviews__btns{margin-bottom:25px}
+.sec--img-txt h4{font-size:27px}
+.sec--img-txt p{font-size:18px}
+.sec--img-txt__img div{margin-bottom:17px}
+.hero--inner{padding:100px 0;padding-bottom:140px}
+.hero--inner h1{font-size:30px}
+.hero--inner .starting-from p{font-size:70px}
+.hero--inner .starting-from p span{font-size:40px}
+.hero--inner .col-lg-5 ul{margin-top:30px}
+.hero--inner .col-lg-5 ul li{font-size:18px}
+.hero--inner .contact-info p{font-size:19px}
+.hero--inner .contact-info a{font-size:27px}
+.hero--inner .contact-info svg{width:40px}
+.hero--inner .slide-to-section ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.hero--inner .slide-to-section li{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:50%;margin:0 !important}
+}@media(max-width:536px){.sec--reviews__btns{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.sec--reviews__btns span{margin:10px}
+}@media(max-width:420px){h2{font-size:27px;margin-bottom:25px}
+.footer__btm a{font-size:13px}
+.footer__btm li:not(:last-of-type){margin-right:15px}
+.footer__top ul{padding-top:30px}
+.card--v1{padding:90px 0}
+.tabs--var1 .tab-content .tab-pane{padding-top:20px}
+.tabs--var1 .tab-content .tab-pane ol{padding:0 30px;padding-bottom:60px}
+.tabs--var1 .tab-content .tab-pane ol li{font-size:16px !important}
+.tabs--var1 .tab-content .tab-pane li:not(:last-of-type){margin-bottom:15px}
+.tabs--var1 .tab-content .map{height:450px}
+.tabs--var1__tab-toggles .nav-link{padding:5px;padding-top:7px;font-size:20px}
+.tabs--var1__tab-toggles .nav-link:not(:last-of-type){margin-right:10px}
+.tabs--var1:before{top:34px;height:7px}
+.hero--home h1{font-size:40px}
+.hero--home .btn{font-size:33px;margin-bottom:45px}
+.hero--home .parking-option{padding:0}
+.hero--home .parking-option--price .price{font-size:40px;line-height:40px;color:#fff}
+.hero--home .parking-option--price .price span{font-size:30px}
+.hero--home .parking-option--name p{font-size:26px !important;padding-top:0 !important}
+.sign-up{padding:40px 0}
+.sign-up .d-flex{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.sign-up h2{margin-right:auto;text-align:center;margin-bottom:20px;padding:0;font-size:27px}
+.sign-up .btn{font-size:27px}
+.sign-up .btn,.sign-up .form-group{width:100%}
+.sign-up .form{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.sign-up .form-group{margin:0 auto;margin-bottom:15px}
+.services{margin-bottom:0}
+.sec--reviews p{font-size:16px;margin-bottom:10px}
+.sec--reviews h5{font-size:17px}
+.sec--reviews__review{padding-right:30px;padding-left:30px}
+.sec--reviews__btns span{font-size:24px;margin:12px}
+.sec--img-txt h4{font-size:25px;margin-bottom:0 !important}
+.sec--img-txt p{font-size:17px}
+.sec--img-txt__img div{margin-bottom:15px}
+}

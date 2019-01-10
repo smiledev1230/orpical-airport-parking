@@ -1,0 +1,167 @@
+.form-control {
+  height: 42px;
+  text-align: center;
+  border: 2px solid $c-gray--l;
+  border-radius: 6px;
+  font-family: $font-def;
+  font-size: 20px;
+  
+  &::placeholder {
+    text-align: left;
+    color: #999999;
+  }
+
+  &:focus {
+    border-color: rgba($c-yellow,.5);
+    box-shadow: 0 0 0 0.2rem rgba($c-yellow,.25);
+  }
+}
+
+
+.form-group {
+  width: 370px;
+  margin-bottom: 14px;
+}
+
+
+.inner-page-form {
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #000;
+  border-radius: 10px;
+
+  h4 {
+    font-family: $font-def;
+    font-size: 18px;
+    color: #fff;
+    margin: 3px 0 18px 0 !important;
+  }
+
+  #startDate,
+  #endDate {
+    border-radius: 0;
+  }
+
+  .form-group {
+    width: 100%;
+
+    .form-control {
+      font-size: 14px;
+      padding-bottom: 8px;
+      font-weight: 700;
+    }
+  }
+
+  .form-group:nth-of-type(1),
+  .form-group:nth-of-type(3) {
+    margin-right: 3px;
+  }
+
+  .promo-code .form-control {
+    border-radius: 0;
+  }
+
+  .btn {
+    font-family: $font-def;
+    font-weight: 700;
+    font-size: 24px;
+    width: 100%;
+    padding: 17px 0;
+    text-transform: uppercase;
+    box-shadow: none;
+  }
+}
+
+
+.front-page-form {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, .7);
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+
+  .form-group {
+    width: 180px;
+    margin-bottom: 0;
+
+    .form-control {
+      font-size: 14px;
+      padding-bottom: 8px;
+      font-weight: 700;
+    }
+  }
+
+  .promo-code .form-control {
+    border-radius: 0;
+  }
+
+  .start-end-time {
+
+    .form-group {
+      width: 145px;
+
+      &:nth-of-type(1) {
+        margin-right: 3px;
+
+        .form-control{
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.front-page-form--v2 {
+  background-color: #000;
+  padding: 20px;
+
+  .form-control {
+    border-radius: 0;
+  }
+
+  .btn {
+    width: 120px;
+    height: 42px;
+    border-radius: 0;
+  }
+
+  .promo-code {
+    width: 110px;
+  }
+}
+
+/////////// MEDIA QUERIES /////////////
+
+@media (max-width: 1199px) {
+  
+  .front-page-form .start-end-time .form-group {
+    width: 110px;
+  }
+}
+
+@media (max-width: 991px) {
+  
+  .front-page-form {
+    flex-wrap: wrap;
+
+    & > .form-group, 
+    .start-end-time,
+    .start-end-time .form-group {
+      width: 100%;
+    }
+
+    & > .form-group:nth-child(1), 
+    .start-end-time .form-group {
+      margin-bottom: 10px;
+    }
+  }
+
+  .front-page-form--v2 .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

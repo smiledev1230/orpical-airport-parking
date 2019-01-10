@@ -1,0 +1,537 @@
+/* homepage */
+
+.hero--home {
+	@extend %bgncc;
+
+	&__wrap {
+		padding: 100px 80px 30px 80px;
+		text-align: center;
+	}
+
+	h1 {
+		text-transform: uppercase;
+	}
+
+	.btn {
+		margin-bottom: 55px;
+	  padding: 15px 0 10px 0;
+		width: 100%;
+		font-size: 47px;
+		line-height: 38px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.parking-option {
+		padding: 10px;
+		border-radius: 10px;
+		border: 7px solid $c-brand;
+		background: repeating-linear-gradient(
+    	-45deg,
+    	$c-brand,
+    	rgba($c-brand, .3) 2px,
+    	rgba($c-brand, .3) 12px);
+		color: #fff;
+		width: calc(50% - 100px);
+
+		p {
+			margin-bottom: 0;
+			color: #fff;
+		}
+		
+		&--name p {
+			font-weight: 900;
+			font-size: 34px;
+			line-height: 40px;
+			padding-top: 5px;
+		}
+
+		&--price {
+			margin-left: 18px;
+
+			.price {
+				margin-left: 20px;
+				position: relative;
+				font-family: $font-sec;
+				font-weight: 700;
+				font-size:   65px;
+				line-height: 75px;
+				color: #fff;
+
+				span {
+					position: absolute;
+					font-size: 45px;
+					top:  -15px;
+					left: -28px;
+				}
+			}
+		}
+	}
+
+	.bcg--filler {
+		margin-bottom: -10px;
+	}
+}
+
+.airports {
+
+	.container {
+		position: relative;
+	}
+
+	.toggle--load-more {
+		margin-left: auto;
+    display: table;
+		font-size: 14px;
+		margin-top: 10px;
+		color: #86b2ee;
+	}
+}
+
+.services {
+	margin-bottom: 50px;
+}
+
+.reviews--home {
+	background-color: $c-gray;
+	padding-top: 0 !important;
+	
+	.bcg--filler {
+		margin-bottom: 20px;
+		transform: rotate(180deg) translateY(7px) !important;
+	}
+}
+
+
+.sign-up {
+	position: relative;
+	padding: 50px 0;
+
+	h2 {
+		margin-left: auto;
+		margin-bottom: 0;
+		font-size: 42px;
+		text-align: right;
+		padding: 0;
+		padding-right: 20px;
+		padding-top: 5px;
+	}
+
+	&:before {
+		@extend %con-abs;
+		top: 0;
+    left: -100px;
+    width: 43%;
+    height: 100%;
+    background-color: #efb53a;
+    transform: skewX(-33deg);
+	}
+
+	&:after {
+		@extend %con-abs;
+		@extend %bgncc;
+		height: 100%;
+		width: 500px;
+		top: 0;
+		left: 0;
+		background-image: url(img/sign-up-bg.png);
+	}
+}
+
+
+.park-plus-parking {
+	background-color: $c-gray;
+	text-align: center;
+	padding: 47px 0 75px 0;
+
+	h2 {
+		color: $c-txt;
+		padding-bottom: 0;
+		margin-bottom: 40px;
+
+		span {
+			color: $c-yellow;
+		}
+	}
+
+	ul {
+		text-align: left;
+    list-style: none;
+    padding: 0;
+    padding-bottom: 25px;
+		margin-bottom: 20px;
+    border-bottom: 1px solid #aaaaaa;
+
+    li {
+    	line-height: 22px;
+    	margin-bottom: 10px;
+    }
+
+    .underline-hover:before {
+    	top: 28px;
+  	}
+
+    li a {
+    	text-transform: capitalize;
+    	font-size: 22px;
+    	color: $c-txt;
+    }
+	}
+
+	.social-wrap ul {
+		display: flex;
+		border: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 45px;
+			height: 45px;
+			background-color: #9e9e9e;
+			border-radius: 50%;
+			transition: all .3s ease-in-out;
+
+			&:hover {
+				background-color: $c-yellow;
+			}
+		}
+
+		li:not(:last-of-type) {
+			margin-right: 20px;
+		}
+
+		svg {
+			height: 25px;
+			fill: white;
+		}
+	}
+
+	.col-lg-3 {
+		margin: 0 calc(100% / 12);
+	}
+
+	.location {
+		position: relative;
+		width: 100%;
+		height: 360px;
+
+		#map-canvas {
+			position: absolute;
+			top:  0;		
+			left: 0;
+			width:  100%;
+			height: 100%;
+		}
+	}
+}
+
+
+
+.starting-at {
+	font-size: 22px !important;
+	line-height: 1;
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	padding-left: 19%;
+}
+
+
+
+//////////// MEDIA QUERIES //////////////
+
+@media (max-width: 1787px) {
+	
+	.hero--home {
+
+		&__wrap {
+			// padding: 100px 40px 30px 40px;
+		}
+
+	}
+
+	.sign-up {
+
+	}
+
+}
+
+
+@media (max-width: 1199px) {
+
+	.hero--home {
+
+		.parking-option {
+			justify-content: center;
+			width: calc(50% - 20px);
+			padding: 10px 0;
+		}
+	}
+	
+	.sign-up {
+
+		h2 {
+			font-size: 38px;
+			padding-right: 15px;
+		}
+
+		&:before {
+	    width: 38%;
+		}
+
+		&:after {
+			height: 100%;
+			width: 290px;
+			background-position: -220px;
+		}
+	}
+
+
+}
+
+
+
+
+
+@media (max-width: 991px) {
+	
+	.hero--home {
+
+		&__wrap {
+			padding: 100px 40px 30px 40px;
+		}
+
+		.parking-options {
+			flex-direction: column;
+
+			.parking-option {
+				justify-content: center;
+				width: 100%;
+
+				&:not(:last-of-type) {
+					margin-bottom: 30px;
+				}
+
+				&--price {
+					font-size: 60px;
+
+					span {
+						font-size: 40px;
+					}
+				}
+
+				&--name p {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	.sign-up {
+
+		h2 {
+			font-size: 36px;
+			padding-top: 0;
+		}
+
+		&:before,
+		&:after {
+	    display: none;
+		}
+
+	}
+
+
+	.park-plus-parking {
+		padding: 45px 0 60px 0;
+
+		h2 {
+			margin-bottom: 30px;
+		}
+
+		ul li a {
+	    font-size: 18px;
+	  }
+
+		.col-lg-3 {
+			margin-left: 0;
+		}
+
+		.location {
+			margin-left: 40px;
+		}
+
+		.underline-hover:before {
+    	top: 15px;
+  	}
+	}
+}
+
+
+@media (max-width: 767px) {
+	
+	.hero--home {
+
+		&__wrap {
+			padding: 0;
+			padding-top: 100px;
+		}
+
+		
+
+		h1 {
+			font-size: 50px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.sign-up {
+		padding: 40px 0;
+
+		.d-flex {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		h2 {
+			margin-right: auto;
+			text-align: center;
+			margin-bottom: 20px;
+			padding: 0;
+			font-size: 34px;
+		}
+
+		.btn {
+			font-size: 29px;
+			width: 370px;
+		}
+
+		.form-group {
+			margin: 0 auto;
+			margin-bottom: 15px;
+		}	
+	}
+
+	.airport-reviews {
+		padding-top: 0px !important;
+	}
+
+
+	.park-plus-parking {
+		padding: 45px 0 60px 0;
+
+		h2 {
+			margin-bottom: 30px;
+		}
+
+		ul li a {
+	    font-size: 18px;
+	  }
+
+		.col-lg-3 ul {
+			text-align: center;
+		}
+
+		.location {
+			margin-left: 0;
+		}
+		
+		.social-wrap ul {
+    	justify-content: center;
+    	margin-bottom: 25px;
+		}
+	}
+}
+
+
+
+@media (max-width: 575px) {
+	
+	.services {
+		margin-bottom: 20px;
+	}
+}
+
+
+
+
+@media (max-width: 420px) {
+	
+	.hero--home {
+
+		h1 {
+			font-size: 40px;
+		}
+
+		.btn {
+			font-size: 33px;
+			margin-bottom: 45px;
+		}
+
+		.parking-option {
+			padding: 0;
+
+			&--price {
+
+				.price {
+					font-size:   40px;
+					line-height: 40px;
+					color: #fff;
+
+					span {
+						font-size: 30px;
+					}
+				}
+			}
+
+			&--name p {
+				font-size: 26px !important;
+				padding-top: 0 !important;
+			}
+		}
+	}
+
+	.sign-up {
+		padding: 40px 0;
+
+		.d-flex {
+			flex-direction: column;
+		}
+
+		h2 {
+			margin-right: auto;
+			text-align: center;
+			margin-bottom: 20px;
+			padding: 0;
+			font-size: 27px;
+		}
+
+		.btn {
+			font-size: 27px;
+		}
+
+		.btn,
+		.form-group {
+			width: 100%;
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.form-group {
+			margin: 0 auto;
+			margin-bottom: 15px;
+		}	
+	}
+
+	.services {
+		margin-bottom: 0;
+	}
+
+}
