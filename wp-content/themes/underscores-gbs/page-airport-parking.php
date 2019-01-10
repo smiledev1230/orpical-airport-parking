@@ -12,15 +12,15 @@ get_header(); ?>
       <form class="front-page-form front-page-form--v2" method="GET" action="https://reservations.parkplusairportparking.com/reservation/book/">
         <div class="form-group">
           <select id="selectLocation" class="form-control" name="loc">
-		        <option disabled="" selected="selected">Select a location...</option>									
-				<option value="540-314">Newark Airport Park Plus Parking</option>									
-				<option value="540-511">Newark Airport Park Plus Parking  (Rt 1&amp;9)</option>									
-				<option value="835-316">Newark Airport Renaissance Hotel</option>									
-				<option value="695-312">John F. Kennedy (JFK) Airport Parking</option>									
-				<option value="870-310">LaGuardia Airport Marriott Hotel</option>									
-				<option value="800-306">Westchester Airport Overflow/Long Term Lot</option>								
-				<option value="1470-606">Wyndham Garden Philadelphia Airport Hotel</option>
-            </select>
+            <option disabled="" selected="selected">Select a location...</option>
+            <option value="540-1123">Newark Airport Park Plus Parking</option>
+            <option value="540-1118">Newark Airport Park Plus Parking (Rt 1&amp;9)</option>
+            <option value="835-1121">Newark Airport Renaissance Hotel</option>
+            <option value="695-1125">John F. Kennedy (JFK) Airport Parking</option>
+            <option value="870-1127">LaGuardia Airport Marriott Hotel</option>
+            <option value="800-1129">Westchester Airport Overflow/Long Term Lot</option>
+            <option value="1470-1116">Wyndham Garden Philadelphia Airport Hotel</option>
+          </select>
         </div>
         
         <div class="start-end-time d-flex">

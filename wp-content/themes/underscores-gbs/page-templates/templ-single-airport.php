@@ -15,16 +15,16 @@
         <?php $airport = get_field('airport_short_name'); ?>
           <select id="selectLocation" class="form-control" name="loc">
 		        <option disabled="" <?php if (!$airport): echo 'selected="selected"'; endif; ?>>Select a location...</option>									
-				<option value="540-314" <?php if ($airport == "EWR"): echo 'selected="selected"'; endif; ?>>Newark Airport Park Plus Parking</option>									
-				<option value="540-511" <?php if ($airport == "EWR2"): echo 'selected="selected"'; endif; ?>>Newark Airport Park Plus Parking  (Rt 1&amp;9)</option>									
-				<option value="835-316" <?php if ($airport == "EWR3"): echo 'selected="selected"'; endif; ?>>Newark Airport Renaissance Hotel</option>									
-				<option value="695-312" <?php if ($airport == "JFK"): echo 'selected="selected"'; endif; ?>>John F. Kennedy (JFK) Airport Parking</option>									
-				<option value="870-310" <?php if ($airport == "LGA"): echo 'selected="selected"'; endif; ?>>LaGuardia Airport Marriott Hotel</option>									
-				<option value="800-306" <?php if ($airport == "HPN"): echo 'selected="selected"'; endif; ?>>Westchester Airport Overflow/Long Term Lot</option>								
-				<option value="1470-606" <?php if ($airport == "PHL"): echo 'selected="selected"'; endif; ?>>Wyndham Garden Philadelphia Airport Hotel</option>
-            </select>
+    				<option value="540-1123" <?php if ($airport == "EWR"): echo 'selected="selected"'; endif; ?>>Newark Airport Park Plus Parking</option>									
+    				<option value="540-1118" <?php if ($airport == "EWR2"): echo 'selected="selected"'; endif; ?>>Newark Airport Park Plus Parking  (Rt 1&amp;9)</option>									
+    				<option value="835-1121" <?php if ($airport == "EWR3"): echo 'selected="selected"'; endif; ?>>Newark Airport Renaissance Hotel</option>									
+    				<option value="695-1125" <?php if ($airport == "JFK"): echo 'selected="selected"'; endif; ?>>John F. Kennedy (JFK) Airport Parking</option>									
+    				<option value="870-1127" <?php if ($airport == "LGA"): echo 'selected="selected"'; endif; ?>>LaGuardia Airport Marriott Hotel</option>									
+    				<option value="800-1129" <?php if ($airport == "HPN"): echo 'selected="selected"'; endif; ?>>Westchester Airport Overflow/Long Term Lot</option>								
+    				<option value="1470-1116" <?php if ($airport == "PHL"): echo 'selected="selected"'; endif; ?>>Wyndham Garden Philadelphia Airport Hotel</option>
+          </select>
         </div>
-        
+
         <div class="start-end-time d-flex">
           <div class="form-group">
             <input type="text" class="form-control dp" id="startDate" placeholder="Start Date" name="depart_date">
