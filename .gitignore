@@ -6,7 +6,7 @@ wp-content/backups/
 wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
-wp-content/uploads/
+wp-content/uploads/*
 wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
@@ -26,3 +26,4 @@ wp-content/themes/*
 wp-content/plugins/*
 wp-includes/
 !wp-content/themes/underscores-gbs/
+!wp-content/uploads/custom-css-js/
